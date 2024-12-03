@@ -1,0 +1,8 @@
+streamlit>=1.28
+streamlit-feedback
+langchain-community
+langchain
+openai
+requests
+langchain-google-community
+beautifulsoup4

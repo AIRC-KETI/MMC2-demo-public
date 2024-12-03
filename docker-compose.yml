@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  streamlit_app:
+    container_name: streamlit_app
+    restart: always
+    command: streamlit run prompt.py --server.port=8501 --server.address=0.0.0.0
+    build: .
+    ports:
+      - 8501:8501
+    env_file:
+      - .env
+    volumes:
+      - ./app:/app
+    environment:
+      - TZ=Asia/Seoul
+
