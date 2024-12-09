@@ -22,3 +22,4 @@ docker compose up
 docker compose down
 ```
 
+update README
